@@ -4,3 +4,7 @@
 @media(max-width:480px){:root .character{bottom:-160px}}
 
 .tray{width:calc(100% - 10px)}
+
+.game-shell.celebrating .character{transform:translate(97px,32px) scale(1.06)}
+@media(max-width:480px){.game-shell.celebrating .character{transform:translate(85px,28px) scale(1.04)}}
+
