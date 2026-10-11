@@ -96,7 +96,7 @@ function add(id,target='auto'){
  }
  sound.tone();render();
  if(id==='raw-patty')toast('生肉饼也能放进餐盘，不过奶蛙更喜欢煎熟的。');
- if(dish.burger.length===1&&id==='bun-bottom')talk('再煎一片肉，就更香了。');
+ if(dish.burger.length===1&&id==='bun-bottom')talk('底包稳稳的，按订单加料吧。');
 }
 function grillClick(){
  if(locked||!started)return;
