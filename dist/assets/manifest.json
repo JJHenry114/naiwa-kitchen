@@ -1,0 +1,422 @@
+{
+  "bun-bottom": {
+    "size": [
+      300,
+      208
+    ],
+    "bytes": 29604
+  },
+  "bun-top": {
+    "size": [
+      300,
+      230
+    ],
+    "bytes": 28384
+  },
+  "char-confused": {
+    "size": [
+      373,
+      482
+    ],
+    "bytes": 22214
+  },
+  "char-curious": {
+    "size": [
+      270,
+      486
+    ],
+    "bytes": 20400
+  },
+  "char-happy": {
+    "size": [
+      286,
+      492
+    ],
+    "bytes": 19908
+  },
+  "char-laugh-small": {
+    "size": [
+      303,
+      493
+    ],
+    "bytes": 22692
+  },
+  "char-laugh": {
+    "size": [
+      494,
+      900
+    ],
+    "bytes": 53940
+  },
+  "char-neutral": {
+    "size": [
+      454,
+      900
+    ],
+    "bytes": 50802
+  },
+  "char-recover": {
+    "size": [
+      275,
+      483
+    ],
+    "bytes": 19910
+  },
+  "char-wait": {
+    "size": [
+      284,
+      493
+    ],
+    "bytes": 19914
+  },
+  "cheese": {
+    "size": [
+      300,
+      225
+    ],
+    "bytes": 19934
+  },
+  "cup-milk": {
+    "size": [
+      268,
+      340
+    ],
+    "bytes": 28662
+  },
+  "cup-mixed": {
+    "size": [
+      272,
+      346
+    ],
+    "bytes": 37288
+  },
+  "cup-pearls": {
+    "size": [
+      274,
+      341
+    ],
+    "bytes": 42552
+  },
+  "cup-tea": {
+    "size": [
+      272,
+      340
+    ],
+    "bytes": 34234
+  },
+  "cup": {
+    "size": [
+      273,
+      341
+    ],
+    "bytes": 42842
+  },
+  "dish-0": {
+    "size": [
+      252,
+      260
+    ],
+    "bytes": 33148
+  },
+  "dish-1": {
+    "size": [
+      260,
+      203
+    ],
+    "bytes": 21980
+  },
+  "dish-10": {
+    "size": [
+      260,
+      255
+    ],
+    "bytes": 17582
+  },
+  "dish-11": {
+    "size": [
+      210,
+      260
+    ],
+    "bytes": 17450
+  },
+  "dish-2": {
+    "size": [
+      260,
+      240
+    ],
+    "bytes": 22036
+  },
+  "dish-3": {
+    "size": [
+      218,
+      260
+    ],
+    "bytes": 17254
+  },
+  "dish-4": {
+    "size": [
+      232,
+      260
+    ],
+    "bytes": 22834
+  },
+  "dish-5": {
+    "size": [
+      220,
+      260
+    ],
+    "bytes": 24788
+  },
+  "dish-6": {
+    "size": [
+      186,
+      260
+    ],
+    "bytes": 17816
+  },
+  "dish-7": {
+    "size": [
+      198,
+      260
+    ],
+    "bytes": 20428
+  },
+  "dish-8": {
+    "size": [
+      260,
+      238
+    ],
+    "bytes": 25390
+  },
+  "dish-9": {
+    "size": [
+      259,
+      260
+    ],
+    "bytes": 30808
+  },
+  "fail-0": {
+    "size": [
+      260,
+      258
+    ],
+    "bytes": 30776
+  },
+  "fail-1": {
+    "size": [
+      260,
+      239
+    ],
+    "bytes": 31570
+  },
+  "fail-2": {
+    "size": [
+      228,
+      260
+    ],
+    "bytes": 15606
+  },
+  "fail-3": {
+    "size": [
+      234,
+      260
+    ],
+    "bytes": 17372
+  },
+  "fail-4": {
+    "size": [
+      260,
+      227
+    ],
+    "bytes": 28794
+  },
+  "fail-5": {
+    "size": [
+      260,
+      207
+    ],
+    "bytes": 24090
+  },
+  "foam": {
+    "size": [
+      300,
+      234
+    ],
+    "bytes": 16866
+  },
+  "kitchen": {
+    "size": [
+      941,
+      1672
+    ],
+    "bytes": 71332
+  },
+  "laugh-apron": {
+    "size": [
+      323,
+      495
+    ],
+    "bytes": 32372
+  },
+  "laugh-bow": {
+    "size": [
+      293,
+      499
+    ],
+    "bytes": 26494
+  },
+  "laugh-chef": {
+    "size": [
+      292,
+      507
+    ],
+    "bytes": 27002
+  },
+  "laugh-original": {
+    "size": [
+      293,
+      499
+    ],
+    "bytes": 27488
+  },
+  "laugh-party": {
+    "size": [
+      289,
+      507
+    ],
+    "bytes": 28234
+  },
+  "laugh-shades": {
+    "size": [
+      292,
+      452
+    ],
+    "bytes": 25746
+  },
+  "lettuce": {
+    "size": [
+      300,
+      241
+    ],
+    "bytes": 36782
+  },
+  "lid": {
+    "size": [
+      332,
+      171
+    ],
+    "bytes": 26680
+  },
+  "milk-tank": {
+    "size": [
+      251,
+      399
+    ],
+    "bytes": 31362
+  },
+  "milk": {
+    "size": [
+      300,
+      266
+    ],
+    "bytes": 25228
+  },
+  "outfit-apron": {
+    "size": [
+      284,
+      480
+    ],
+    "bytes": 24244
+  },
+  "outfit-bow": {
+    "size": [
+      263,
+      502
+    ],
+    "bytes": 21330
+  },
+  "outfit-chef": {
+    "size": [
+      265,
+      509
+    ],
+    "bytes": 20658
+  },
+  "outfit-original": {
+    "size": [
+      264,
+      502
+    ],
+    "bytes": 20554
+  },
+  "outfit-party": {
+    "size": [
+      264,
+      508
+    ],
+    "bytes": 21628
+  },
+  "outfit-shades": {
+    "size": [
+      266,
+      463
+    ],
+    "bytes": 20378
+  },
+  "pan": {
+    "size": [
+      365,
+      289
+    ],
+    "bytes": 23588
+  },
+  "patty": {
+    "size": [
+      300,
+      228
+    ],
+    "bytes": 41588
+  },
+  "pearls": {
+    "size": [
+      300,
+      201
+    ],
+    "bytes": 26762
+  },
+  "raw-patty": {
+    "size": [
+      300,
+      222
+    ],
+    "bytes": 36628
+  },
+  "tea-tank": {
+    "size": [
+      251,
+      399
+    ],
+    "bytes": 33020
+  },
+  "tea": {
+    "size": [
+      300,
+      266
+    ],
+    "bytes": 32190
+  },
+  "tomato": {
+    "size": [
+      300,
+      222
+    ],
+    "bytes": 29022
+  },
+  "tray": {
+    "size": [
+      420,
+      191
+    ],
+    "bytes": 17846
+  }
+}
