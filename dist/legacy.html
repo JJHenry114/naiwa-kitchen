@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f8f2e4"><meta name="description" content="给奶蛙做一份怪味汉堡或奶茶，解锁配方和装扮，收获一阵熟悉的大笑。"><title>奶蛙怪味厨房</title><link rel="icon" href="assets/char-neutral.webp"><link rel="stylesheet" href="style.css?v=1.0.1"><link rel="preload" href="assets/kitchen.webp" as="image"><link rel="preload" href="assets/char-neutral.webp" as="image"></head>
+<body>
+<div class="desktop-note"><span class="tiny">A LITTLE KITCHEN, A LOT OF LAUGHS</span><h1>把日子，<br>煮得好笑一点。</h1><p>一份随心搭配的料理，<br>一个笑得停不下来的奶蛙。</p><div class="note-line"></div><span>慢慢做，没有倒计时。</span></div>
+<main id="game" class="game-shell">
+ <header class="topbar"><button class="icon-button" id="settings-btn" aria-label="设置"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><div class="brand"><span>NAIWA'S LITTLE KITCHEN</span><strong>奶蛙<span>怪味厨房</span></strong></div><button class="wallet" id="wallet-btn" aria-label="金币与装扮"><span class="coin">✦</span><b id="coins">0</b></button></header>
+ <section class="cafe" aria-label="奶蛙顾客">
+  <span class="open-sign"><i></i> 今日营业中</span>
+  <div id="character" class="character"><canvas id="character-canvas" aria-label="奶蛙正在等待料理"></canvas><img id="character-fallback" alt="" src="assets/char-neutral.webp" hidden></div>
+  <div class="character-bubble" id="character-bubble">肚子准备好啦。</div>
+  <article class="order-card" id="order-card"><div class="order-meta"><span id="order-number">ORDER 01</span><span class="order-heart">♡</span></div><h2 id="order-name">招牌芝士堡</h2><p id="order-line"></p><div id="order-rules" class="order-rules"></div><div class="order-reward"><span>做好就有好心情</span><b id="order-reward">+30 ✦</b></div></article>
+  <div class="counter-edge"></div>
+ </section>
+ <nav class="station-tabs" aria-label="制作台"><button id="burger-tab" class="selected" data-station="burger" aria-pressed="true"><svg viewBox="0 0 24 24"><path d="M4 10C4 3 20 3 20 10ZM3 14h18M4 18h16M6 21h12"/></svg>汉堡工坊</button><button id="tea-tab" data-station="tea" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="m7 7 2 14h8l2-14ZM5 7h16M15 7l3-5"/></svg>奶茶吧台</button><button id="skip-order" class="next-customer" aria-label="换一位客人">换一位 ↗</button></nav>
+ <section class="workbench" id="workbench" aria-label="料理制作区">
+  <div id="burger-work" class="station">
+   <button id="grill" class="grill" aria-label="煎锅，点击翻面或取出肉饼"><span class="small-label">小火慢煎</span><div class="pan-wrap"><img src="assets/pan.webp" class="pan" alt="煎锅"><img id="grill-patty" alt="" hidden><div class="sizzle" id="sizzle"></div></div><span id="grill-status" class="grill-status">放入一片生肉饼</span><div class="cook-meter"><i id="cook-progress"></i></div></button>
+   <div id="burger-drop" class="assembly dropzone" role="group" aria-label="汉堡组装区"><div class="assembly-hint" id="burger-hint"><span>＋</span>从一片底包开始</div><img src="assets/tray.webp" class="tray" alt="餐盘"><div id="burger-stack" class="burger-stack"></div><span class="dish-counter" id="burger-counter">0 层</span></div>
+  </div>
+  <div id="tea-work" class="station" hidden><div class="tea-tip"><span class="small-label">一杯好心情</span><span id="tea-status">先加红茶和牛奶</span><div class="stir-dots" id="stir-dots"><i></i><i></i><i></i></div><button id="stir-btn" class="mini-button">↻ 搅拌</button><button id="seal-btn" class="mini-button">封杯 ✓</button></div><div id="tea-drop" class="tea-assembly dropzone" role="group" aria-label="奶茶制作区，可在杯子上画圈搅拌"><div class="cup-body" id="cup-body"><div class="glass"><div class="liquid" id="liquid"></div><img class="cup-pearls" id="cup-pearls" src="assets/pearls.webp" alt="" hidden><div class="foam" id="cup-foam" hidden></div><img class="glass-texture" src="assets/cup.webp" alt=""><div class="cup-sticker"><span>✦</span>奶蛙</div></div><img id="cup-lid" class="cup-lid" src="assets/lid.webp" alt="杯盖" hidden><div id="pour-stream" class="pour-stream"></div></div><span id="tea-counter" class="dish-counter">0 份</span></div><div class="tea-props"><img src="assets/tea-tank.webp" alt="红茶桶"><img src="assets/milk-tank.webp" alt="牛奶桶"></div></div>
+ </section>
+ <section class="ingredient-section"><div class="ingredient-heading"><span>新鲜食材</span><small id="ingredient-tip">轻点添加，也可以拖进餐盘</small></div><div class="ingredient-shelf" id="ingredient-shelf" aria-label="食材"></div></section>
+ <div class="actions"><button id="undo-btn" class="secondary" aria-label="撤回一步">↶ <span>撤回</span></button><button id="reset-btn" class="secondary">↻ <span>重做</span></button><button id="serve-btn" class="serve" disabled><svg viewBox="0 0 24 24"><path d="M3 18h18M5 15a7 7 0 0 1 14 0ZM12 8V5M10 5h4"/></svg><span>交给奶蛙</span><span class="arrow">→</span></button></div>
+ <footer class="bottom-nav"><button id="book-btn"><svg viewBox="0 0 24 24"><path d="M12 5v16M12 5C7 2 2 4 2 4v15s5-2 10 2c5-4 10-2 10-2V4s-5-2-10 1Z"/></svg><span>配方手账 <b id="recipe-count">0/12</b></span></button><span class="footer-divider"></span><button id="wardrobe-btn"><svg viewBox="0 0 24 24"><path d="M9 6a3 3 0 1 1 3 3v3L3 18v2h18v-2l-9-6"/></svg><span>奶蛙衣橱</span></button><span id="saved-status" class="saved-status">本地保存</span></footer>
+ <div id="toast" class="toast" role="status" aria-live="polite"></div>
+ <div id="particles" class="particles" aria-hidden="true"></div>
+ <section id="intro" class="intro"><div class="intro-card"><span class="eyebrow">一间只为奶蛙开的店</span><h1>今天，也要<br>吃得哈哈大笑。</h1><div class="intro-character"><img src="assets/char-neutral.webp" alt="等开饭的奶蛙"><span>我都等饿啦…</span></div><p>煎一片肉，叠一座汉堡。<br>摇一杯奶茶，换一个开怀大笑。</p><button id="start-btn" class="serve start-button">开门营业 <span>→</span></button><small>点击或拖拽食材 · 没有倒计时 · 进度自动保存</small></div></section>
+ <div id="laugh-caption" class="laugh-caption" aria-live="polite" hidden><span>哈哈哈哈哈哈！</span><small>这口味，正合我意。</small><button id="finish-laugh">好吃就常来 →</button></div>
+</main>
+<dialog id="modal"><header class="modal-header"><div><span id="modal-eyebrow" class="eyebrow"></span><h2 id="modal-title"></h2></div><button class="icon-button close-modal" aria-label="关闭弹窗">×</button></header><div id="modal-content"></div></dialog>
+<script type="module" src="app.js?v=1.0.2"></script>
+</body></html>
